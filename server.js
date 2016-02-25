@@ -29,13 +29,13 @@ app.listen(app.get('port'), function () {
     console.log('Express server listening on port ' + app.get('port'));
 });
 
-if ( process.env.NODE_ENV != 'production' ) {
+if ( process.env.NODE_ENV == 'production' ) {
+    clientId = process.env.POKITDOK_CLIENT_ID;
+    clientSecret = process.env.POKITDOK_CLIENT_SECRET;
+} else {
     var config = require('./config');
     clientId = config.pokitDok.clientId,
     clientSecret = config.pokitDok.clientSecret
-} else {
-    clientId = process.env.POKITDOK_CLIENT_ID;
-    clientSecret = process.env.POKITDOK_CLIENT_SECRET;
 }
 
 // set up pokitDok client
@@ -159,6 +159,7 @@ app.post('/api/insurancePrices', function(req, res){
 }); // end '/plans' route
 app.post('/api/icdConvert', function(req, res){
     var code = req.body.icd_code;
+    console.log(code);
 
     pokitdok.icdConvert(code, function(err, response) {
         if (err) {
