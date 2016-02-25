@@ -1,0 +1,206 @@
+.view-animate.ng-enter, .view-animate.ng-leave {
+  -webkit-transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.7s;
+  transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.7s;
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0; }
+
+.view-animate.ng-enter {
+  transform: translateX(-1000px); }
+
+.view-animate.ng-enter.ng-enter-active {
+  transform: translateX(0);
+  opacity: 1; }
+
+.view-animate.ng-leave.ng-leave-active {
+  opacity: 0; }
+
+.repeat-animation.ng-enter,
+.repeat-animation.ng-leave,
+.repeat-animation.ng-move {
+  -webkit-transition: 0.5s linear all;
+  transition: 0.5s linear all; }
+
+.repeat-animation.ng-leave.ng-leave-active,
+.repeat-animation.ng-enter,
+.repeat-animation.ng-move {
+  -webkit-transition: 0.5s linear all;
+  transition: 0.5s linear all;
+  opacity: 0; }
+
+.repeat-animation.ng-leave,
+.repeat-animation.ng-move.ng-move-active,
+.repeat-animation.ng-enter.ng-enter-active {
+  opacity: 1; }
+
+@keyframes growY {
+  0% {
+    transform: scaleY(0); }
+  100% {
+    transform: scaleY(1); } }
+@keyframes growX {
+  0% {
+    transform: scaleX(0); }
+  100% {
+    transform: scaleX(1); } }
+* {
+  box-sizing: border-box; }
+
+body {
+  background-color: #f2f2f2;
+  position: relative;
+  color: #595959; }
+
+ul {
+  list-style-type: none; }
+  ul.inline-list li {
+    display: inline-block;
+    margin-right: 14px; }
+    ul.inline-list li:last-child {
+      margin-right: 0; }
+
+.text-center {
+  text-align: center; }
+
+.text-yellow {
+  color: #F9A11A; }
+
+.text-purple {
+  color: #672866; }
+
+.text-teal {
+  color: #1CC49E; }
+
+.text-muted {
+  color: gray; }
+
+.container {
+  padding-top: 40px;
+  padding-bottom: 40px; }
+
+.fixed-button-left {
+  left: 30px; }
+
+.fixed-button-right {
+  right: 30px; }
+
+.fixed-button-wrapper {
+  position: fixed;
+  z-index: 100;
+  top: 30px; }
+  .fixed-button-wrapper .stats-button {
+    cursor: pointer;
+    padding-top: 12px;
+    text-align: center;
+    font-size: 1.218em;
+    height: 50px;
+    width: 50px;
+    background-color: #F9A11A;
+    color: #FFFFFF;
+    border-radius: 50%;
+    box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.3);
+    transition: all .1s ease-out; }
+    .fixed-button-wrapper .stats-button:hover {
+      color: #e6e6e6;
+      transform: translateY(-4px); }
+  .fixed-button-wrapper .back-button {
+    top: 30px;
+    cursor: pointer;
+    padding-top: 12px;
+    text-align: center;
+    font-size: 1.218em;
+    height: 50px;
+    width: 50px;
+    background-color: #672866;
+    color: #FFFFFF;
+    border-radius: 50%;
+    box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.3);
+    transition: all .1s ease-out; }
+    .fixed-button-wrapper .back-button:hover {
+      color: #e6e6e6;
+      transform: translateY(-4px); }
+
+h1.title {
+  margin-top: 10px; }
+
+.item {
+  position: relative;
+  box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.3);
+  background-color: #FFFFFF;
+  border-left: thin solid silver;
+  border-right: thin solid silver;
+  border-bottom: thin solid #f3f3f3;
+  transition: border-radius .2s ease-out;
+  padding: 20px; }
+  .item h5 {
+    border-bottom: thin solid #fee8c8;
+    padding-right: 20px; }
+
+.item:first-child {
+  border-top: thin solid silver;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px; }
+
+.item:last-child {
+  border-bottom: thin solid silver;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px; }
+
+.enabled-indicator {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #672866;
+  font-size: 1.218em; }
+
+.stat-bar-wrapper {
+  display: inline-block;
+  text-align: center;
+  width: 30%;
+  margin-right: 4%; }
+  .stat-bar-wrapper:last-child {
+    margin-right: 0; }
+  .stat-bar-wrapper .stat-bar {
+    display: inline-block;
+    margin: 0 auto;
+    width: 10px;
+    background-color: #F9A11A;
+    transform-origin: bottom;
+    animation-name: growY;
+    animation-duration: 2s; }
+
+.total-bar-wrapper {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center; }
+  .total-bar-wrapper h5 {
+    display: inline-block; }
+
+.total-bar {
+  margin-right: 10px;
+  display: inline-block;
+  position: relative;
+  height: 5px;
+  background-color: #672866;
+  transform-origin: left;
+  animation-name: growX;
+  animation-duration: 2s; }
+
+.transactions-stats-container {
+  margin-bottom: 20px; }
+
+.text-uppercase {
+  text-transform: uppercase; }
+
+.panel {
+  padding: 10px;
+  background-color: white;
+  border-radius: 4px;
+  border: thin solid #bfbfbf; }
+
+/*# sourceMappingURL=style.css.map */

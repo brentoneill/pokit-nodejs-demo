@@ -1,0 +1,554 @@
+[
+  {
+    "units_of_work": 1,
+    "_type": "PlatformActivityModel",
+    "name": "activities",
+    "remaining_transitions": [
+      "process",
+      "complete"
+    ],
+    "_uuid": "967a1a70-7048-48fc-a0ca-ef822fe92a2b",
+    "state": {
+      "name": "init",
+      "title": "Initializing"
+    },
+    "trading_partner_id": "PokitDok",
+    "id": "56281ad680de1d0124ecdee0",
+    "transition_path": [
+      "process",
+      "complete"
+    ]
+  },
+  {
+    "units_of_work": 1,
+    "_type": "PlatformActivityModel",
+    "name": "activities",
+    "_uuid": "78f33e54-4890-4d07-ad01-6cee0f406d75",
+    "state": {
+      "name": "completed",
+      "title": "Completed"
+    },
+    "trading_partner_id": "PokitDok",
+    "id": "56281ac53fe8fa011d10abd0",
+    "transition_path": [
+      "process",
+      "complete"
+    ],
+    "history": [
+      {
+        "record_dt": "2015-10-21T23:07:50.036000",
+        "name": "init",
+        "title": "Initializing"
+      },
+      {
+        "record_dt": "2015-10-21T23:07:50.036000",
+        "name": "processing",
+        "title": "Processing transactions"
+      }
+    ]
+  },
+  {
+    "units_of_work": 1,
+    "_type": "PlatformActivityModel",
+    "name": "plans",
+    "_uuid": "6c327ebd-5e75-4080-b682-02451072622e",
+    "state": {
+      "name": "completed",
+      "title": "Completed"
+    },
+    "trading_partner_id": "PokitDok",
+    "id": "56281ac580de1d01261fccec",
+    "transition_path": [
+      "process",
+      "complete"
+    ],
+    "history": [
+      {
+        "record_dt": "2015-10-21T23:07:49.852000",
+        "name": "init",
+        "title": "Initializing"
+      },
+      {
+        "record_dt": "2015-10-21T23:07:49.852000",
+        "name": "processing",
+        "title": "Processing transactions"
+      }
+    ]
+  },
+  {
+    "units_of_work": 1,
+    "_type": "PlatformActivityModel",
+    "name": "plans",
+    "_uuid": "b1159e46-9546-40b1-ac85-0aca317c656b",
+    "state": {
+      "name": "completed",
+      "title": "Completed"
+    },
+    "trading_partner_id": "PokitDok",
+    "id": "56281aae80de1d01261fcceb",
+    "transition_path": [
+      "process",
+      "complete"
+    ],
+    "history": [
+      {
+        "record_dt": "2015-10-21T23:07:26.333000",
+        "name": "init",
+        "title": "Initializing"
+      },
+      {
+        "record_dt": "2015-10-21T23:07:26.333000",
+        "name": "processing",
+        "title": "Processing transactions"
+      }
+    ]
+  },
+  {
+    "units_of_work": 1,
+    "_type": "PlatformActivityModel",
+    "name": "activities",
+    "_uuid": "92c3f851-bcc7-4d98-ba6a-806160779793",
+    "state": {
+      "name": "completed",
+      "title": "Completed"
+    },
+    "trading_partner_id": "PokitDok",
+    "id": "56281aae3fe8fa011f801a70",
+    "transition_path": [
+      "process",
+      "complete"
+    ],
+    "history": [
+      {
+        "record_dt": "2015-10-21T23:07:26.286000",
+        "name": "init",
+        "title": "Initializing"
+      },
+      {
+        "record_dt": "2015-10-21T23:07:26.286000",
+        "name": "processing",
+        "title": "Processing transactions"
+      }
+    ]
+  },
+  {
+    "units_of_work": 1,
+    "_type": "PlatformActivityModel",
+    "name": "plans",
+    "_uuid": "8ba74a06-03c2-49ac-98d6-5b1a141f45fc",
+    "state": {
+      "name": "completed",
+      "title": "Completed"
+    },
+    "trading_partner_id": "PokitDok",
+    "id": "56281aaa80de1d01261fccea",
+    "transition_path": [
+      "process",
+      "complete"
+    ],
+    "history": [
+      {
+        "record_dt": "2015-10-21T23:07:22.909000",
+        "name": "init",
+        "title": "Initializing"
+      },
+      {
+        "record_dt": "2015-10-21T23:07:22.909000",
+        "name": "processing",
+        "title": "Processing transactions"
+      }
+    ]
+  },
+  {
+    "units_of_work": 1,
+    "_type": "PlatformActivityModel",
+    "name": "plans",
+    "_uuid": "ba7efa14-b9d9-4605-8312-b7379e33b85e",
+    "state": {
+      "name": "completed",
+      "title": "Completed"
+    },
+    "trading_partner_id": "PokitDok",
+    "id": "56281aa53fe8fa011d10abcf",
+    "transition_path": [
+      "process",
+      "complete"
+    ],
+    "history": [
+      {
+        "record_dt": "2015-10-21T23:07:17.176000",
+        "name": "init",
+        "title": "Initializing"
+      },
+      {
+        "record_dt": "2015-10-21T23:07:17.176000",
+        "name": "processing",
+        "title": "Processing transactions"
+      }
+    ]
+  },
+  {
+    "units_of_work": 1,
+    "_type": "PlatformActivityModel",
+    "name": "activities",
+    "_uuid": "5ca39f0d-cd71-427c-8deb-26170196e939",
+    "state": {
+      "name": "completed",
+      "title": "Completed"
+    },
+    "trading_partner_id": "PokitDok",
+    "id": "56281aa180de1d01261fcce9",
+    "transition_path": [
+      "process",
+      "complete"
+    ],
+    "history": [
+      {
+        "record_dt": "2015-10-21T23:07:13.113000",
+        "name": "init",
+        "title": "Initializing"
+      },
+      {
+        "record_dt": "2015-10-21T23:07:13.113000",
+        "name": "processing",
+        "title": "Processing transactions"
+      }
+    ]
+  },
+  {
+    "units_of_work": 1,
+    "_type": "PlatformActivityModel",
+    "name": "plans",
+    "_uuid": "b8a03601-03d5-4ebd-a8e2-fead2dc217e8",
+    "state": {
+      "name": "completed",
+      "title": "Completed"
+    },
+    "trading_partner_id": "PokitDok",
+    "id": "56281a093fe8fa011d10abce",
+    "transition_path": [
+      "process",
+      "complete"
+    ],
+    "history": [
+      {
+        "record_dt": "2015-10-21T23:04:41.853000",
+        "name": "init",
+        "title": "Initializing"
+      },
+      {
+        "record_dt": "2015-10-21T23:04:41.853000",
+        "name": "processing",
+        "title": "Processing transactions"
+      }
+    ]
+  },
+  {
+    "units_of_work": 1,
+    "_type": "PlatformActivityModel",
+    "name": "plans",
+    "_uuid": "524289b7-bd1e-47df-af1e-a9a177ffcae8",
+    "state": {
+      "name": "completed",
+      "title": "Completed"
+    },
+    "trading_partner_id": "PokitDok",
+    "id": "56281a0280de1d01261fcce8",
+    "transition_path": [
+      "process",
+      "complete"
+    ],
+    "history": [
+      {
+        "record_dt": "2015-10-21T23:04:34.214000",
+        "name": "init",
+        "title": "Initializing"
+      },
+      {
+        "record_dt": "2015-10-21T23:04:34.214000",
+        "name": "processing",
+        "title": "Processing transactions"
+      }
+    ]
+  },
+  {
+    "units_of_work": 1,
+    "_type": "PlatformActivityModel",
+    "name": "plans",
+    "_uuid": "23c1a447-636a-4231-b416-10dbddd772a1",
+    "state": {
+      "name": "completed",
+      "title": "Completed"
+    },
+    "trading_partner_id": "PokitDok",
+    "id": "562819fe3fe8fa011f801a6e",
+    "transition_path": [
+      "process",
+      "complete"
+    ],
+    "history": [
+      {
+        "record_dt": "2015-10-21T23:04:30.039000",
+        "name": "init",
+        "title": "Initializing"
+      },
+      {
+        "record_dt": "2015-10-21T23:04:30.039000",
+        "name": "processing",
+        "title": "Processing transactions"
+      }
+    ]
+  },
+  {
+    "units_of_work": 1,
+    "_type": "PlatformActivityModel",
+    "name": "plans",
+    "_uuid": "fbc961b1-0960-40e5-87f3-abd37952f714",
+    "state": {
+      "name": "completed",
+      "title": "Completed"
+    },
+    "trading_partner_id": "PokitDok",
+    "id": "562819de80de1d01261fcce7",
+    "transition_path": [
+      "process",
+      "complete"
+    ],
+    "history": [
+      {
+        "record_dt": "2015-10-21T23:03:58.865000",
+        "name": "init",
+        "title": "Initializing"
+      },
+      {
+        "record_dt": "2015-10-21T23:03:58.865000",
+        "name": "processing",
+        "title": "Processing transactions"
+      }
+    ]
+  },
+  {
+    "units_of_work": 1,
+    "_type": "PlatformActivityModel",
+    "name": "activities",
+    "_uuid": "c6421da1-8dd4-4036-872a-d65589dc6882",
+    "state": {
+      "name": "completed",
+      "title": "Completed"
+    },
+    "trading_partner_id": "PokitDok",
+    "id": "562810f83fe8fa011d10abc1",
+    "transition_path": [
+      "process",
+      "complete"
+    ],
+    "history": [
+      {
+        "record_dt": "2015-10-21T22:26:00.295000",
+        "name": "init",
+        "title": "Initializing"
+      },
+      {
+        "record_dt": "2015-10-21T22:26:00.295000",
+        "name": "processing",
+        "title": "Processing transactions"
+      }
+    ]
+  },
+  {
+    "units_of_work": 1,
+    "_type": "PlatformActivityModel",
+    "name": "tradingpartners",
+    "_uuid": "12bfbc92-502f-46be-939b-5c4c79f36d77",
+    "state": {
+      "name": "completed",
+      "title": "Completed"
+    },
+    "trading_partner_id": "PokitDok",
+    "id": "562810f880de1d0125468eae",
+    "transition_path": [
+      "process",
+      "complete"
+    ],
+    "history": [
+      {
+        "record_dt": "2015-10-21T22:26:00.057000",
+        "name": "init",
+        "title": "Initializing"
+      },
+      {
+        "record_dt": "2015-10-21T22:26:00.057000",
+        "name": "processing",
+        "title": "Processing transactions"
+      }
+    ]
+  },
+  {
+    "units_of_work": 1,
+    "_type": "PlatformActivityModel",
+    "name": "activities",
+    "_uuid": "014b7add-a391-431e-9d19-d0ca6780fe61",
+    "state": {
+      "name": "completed",
+      "title": "Completed"
+    },
+    "trading_partner_id": "PokitDok",
+    "id": "562810eb80de1d01261fccd0",
+    "transition_path": [
+      "process",
+      "complete"
+    ],
+    "history": [
+      {
+        "record_dt": "2015-10-21T22:25:47.304000",
+        "name": "init",
+        "title": "Initializing"
+      },
+      {
+        "record_dt": "2015-10-21T22:25:47.304000",
+        "name": "processing",
+        "title": "Processing transactions"
+      }
+    ]
+  },
+  {
+    "units_of_work": 1,
+    "_type": "PlatformActivityModel",
+    "name": "tradingpartners",
+    "_uuid": "f61a670a-9b8c-4679-b73f-4a1d48a19556",
+    "state": {
+      "name": "completed",
+      "title": "Completed"
+    },
+    "trading_partner_id": "PokitDok",
+    "id": "562810eb3fe8fa011d10abc0",
+    "transition_path": [
+      "process",
+      "complete"
+    ],
+    "history": [
+      {
+        "record_dt": "2015-10-21T22:25:47.167000",
+        "name": "init",
+        "title": "Initializing"
+      },
+      {
+        "record_dt": "2015-10-21T22:25:47.167000",
+        "name": "processing",
+        "title": "Processing transactions"
+      }
+    ]
+  },
+  {
+    "units_of_work": 1,
+    "_type": "PlatformActivityModel",
+    "name": "tradingpartners",
+    "_uuid": "186bc9b5-2bbd-4415-8d48-4571b1b9b029",
+    "state": {
+      "name": "completed",
+      "title": "Completed"
+    },
+    "trading_partner_id": "PokitDok",
+    "id": "562810db3fe8fa011d10abbf",
+    "transition_path": [
+      "process",
+      "complete"
+    ],
+    "history": [
+      {
+        "record_dt": "2015-10-21T22:25:31.744000",
+        "name": "init",
+        "title": "Initializing"
+      },
+      {
+        "record_dt": "2015-10-21T22:25:31.744000",
+        "name": "processing",
+        "title": "Processing transactions"
+      }
+    ]
+  },
+  {
+    "units_of_work": 1,
+    "_type": "PlatformActivityModel",
+    "name": "activities",
+    "_uuid": "44ae231a-d51e-4ed6-894d-27764967c95a",
+    "state": {
+      "name": "completed",
+      "title": "Completed"
+    },
+    "trading_partner_id": "PokitDok",
+    "id": "562810db80de1d0124ecdecc",
+    "transition_path": [
+      "process",
+      "complete"
+    ],
+    "history": [
+      {
+        "record_dt": "2015-10-21T22:25:31.672000",
+        "name": "init",
+        "title": "Initializing"
+      },
+      {
+        "record_dt": "2015-10-21T22:25:31.672000",
+        "name": "processing",
+        "title": "Processing transactions"
+      }
+    ]
+  },
+  {
+    "units_of_work": 1,
+    "_type": "PlatformActivityModel",
+    "name": "activities",
+    "_uuid": "a9cf778e-ad27-4727-9d19-7e811a91d00b",
+    "state": {
+      "name": "completed",
+      "title": "Completed"
+    },
+    "trading_partner_id": "PokitDok",
+    "id": "562810d63fe8fa011d10abbe",
+    "transition_path": [
+      "process",
+      "complete"
+    ],
+    "history": [
+      {
+        "record_dt": "2015-10-21T22:25:26.413000",
+        "name": "init",
+        "title": "Initializing"
+      },
+      {
+        "record_dt": "2015-10-21T22:25:26.413000",
+        "name": "processing",
+        "title": "Processing transactions"
+      }
+    ]
+  },
+  {
+    "units_of_work": 1,
+    "_type": "PlatformActivityModel",
+    "name": "activities",
+    "_uuid": "258e3b09-bdc2-462c-8057-0a2f2124d124",
+    "state": {
+      "name": "completed",
+      "title": "Completed"
+    },
+    "trading_partner_id": "PokitDok",
+    "id": "562810c180de1d01261fcccf",
+    "transition_path": [
+      "process",
+      "complete"
+    ],
+    "history": [
+      {
+        "record_dt": "2015-10-21T22:25:05.210000",
+        "name": "init",
+        "title": "Initializing"
+      },
+      {
+        "record_dt": "2015-10-21T22:25:05.210000",
+        "name": "processing",
+        "title": "Processing transactions"
+      }
+    ]
+  }
+]

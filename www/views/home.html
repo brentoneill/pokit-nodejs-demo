@@ -1,0 +1,51 @@
+<span us-spinner="{radius:30, width:8, length: 16}"
+  spinner-on="showSpinner"
+  spinner-key="page-spinner">
+</span>
+<div class="container">
+  <div class="row">
+    <div class="eight columns">
+      <h1 class="title">Trading Partners</h1>
+    </div>
+    <div class="four columns">
+      <label for="exampleEmailInput">Search</label>
+      <input class="u-full-width" type="text" placeholder="By name, supported transactions... " ng-model="searchQuery">
+    </div>
+  </div>
+  <div class="fixed-button-wrapper fixed-button-right">
+    <div class="stats-button" ng-click="mainCtrl.goToPage('stats')">
+      <i class="fa fa-bar-chart"></i>
+    </div>
+    <div class="stats-button" ng-click="mainCtrl.goToPage('icd')">
+      <i class="fa fa-magic"></i>
+    </div>
+  </div>
+  <div class="list-container">
+    <div class="item repeat-animation" ng-repeat="tradingPartner in tradingPartnersData | filter: searchQuery">
+      <div ng-if="!tradingPartner.is_enabled" class="enabled-indicator">
+        disabled <i class="fa fa-circle-outline"></i>
+      </div>
+      <div ng-if="tradingPartner.is_enabled" class="enabled-indicator">
+        enabled <i class="fa fa-circle"></i>
+      </div>
+      <h5>{{ tradingPartner.name }}</h6>
+      <span class="text-muted">Supported API Transactions</span>
+      <ul class="inline-list">
+        <li ng-repeat="transaction in tradingPartner.supported_transactions">
+          <span ng-if="transaction === '837' ">
+            Claims
+            <i class="fa fa-circle text-yellow"></i>
+          </span>
+          <span ng-if="transaction === '276' ">
+            Claims Status
+            <i class="fa fa-circle text-teal"></i>
+          </span>
+          <span ng-if="transaction === '270' ">
+            Eligibility
+            <i class="fa fa-circle text-purple"></i>
+          </span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

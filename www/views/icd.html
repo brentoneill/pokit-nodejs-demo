@@ -1,0 +1,35 @@
+<span us-spinner="{radius:30, width:8, length: 16}" spinner-on="showSpinner"></span>
+<div class="fixed-button-wrapper fixed-button-left">
+  <div class="back-button" ng-click="icdCtrl.goToPage('home')">
+    <i class="fa fa-chevron-left"></i>
+  </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="six columns">
+            <h2>ICD Convert</h2>
+            <h5>Enter an ICD-9 code below:</h5>
+            <input type="text" name="icd" ng-model="icd9Code">
+            <button name="button-primary" ng-click="icdCtrl.convertIcd(icd9Code)">Convert</button>
+        </div>
+        <div class="six columns">
+            <h3 class="text-purple">ICD9 code</h3>
+            <div class="panel">
+                <h5 class="text-uppercase">{{ sourceCode.system }} - {{ sourceCode.value }}</h5>
+                <p> {{ sourceCode.description }}</p>
+            </div>
+
+            <hr />
+            <h3 class="text-teal"> Possible ICD10 scenarios </h3>
+
+            <div class="panel" ng-repeat="scenario in possibleList">
+                <h5 class="text-uppercase">{{ scenario.system }} - {{ scenario.value }}</h5>
+                <p> {{ scenario.description }}</pp>
+            </div>
+
+        </div>
+    </div>
+
+
+
+</div>
