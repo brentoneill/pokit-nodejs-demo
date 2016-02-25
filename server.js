@@ -15,6 +15,8 @@ var Q = require('q');
 // JSON saving library
 var jsonfile = require('jsonfile');
 
+var clientSecret, clientId;
+
 
 // set up express application
 app.use(morgan('dev'));                          // Logs every request to console
@@ -28,9 +30,16 @@ app.listen(app.get('port'), function () {
     console.log('Express server listening on port ' + app.get('port'));
 });
 
-// set up pokitDok client
-var pokitdok = new PokitDok(config.pokitDok.clientId, config.pokitDok.clientSecret);
+if (config) {
+    clientId = config.pokitDok.clientId,
+    clientSecret = config.pokitDok.clientSecret
+} else {
+    clientId = process.env.POKITDOK_CLIENT_ID;
+    clientId = process.env.POKITDOK_CLIENT_SECRET;
+}
 
+// set up pokitDok client
+var pokitdok = new PokitDok(clientId, clientSecret);
 
 // function to return a list of providers
 function getProviders(opt) {
