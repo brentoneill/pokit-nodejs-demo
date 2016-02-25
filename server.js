@@ -35,7 +35,7 @@ if ( process.env.NODE_ENV != 'production' ) {
     clientSecret = config.pokitDok.clientSecret
 } else {
     clientId = process.env.POKITDOK_CLIENT_ID;
-    clientId = process.env.POKITDOK_CLIENT_SECRET;
+    clientSecret = process.env.POKITDOK_CLIENT_SECRET;
 }
 
 console.log(process.env.NODE_ENV);
