@@ -27,6 +27,7 @@ angular.module('poki')
       };
 
       icdCtrl.convertIcd = function(code) {
+          code = code.toUpperCase();
           $scope.myPromise = PokiService.convertIcd(code).then(function(res) {
                 $scope.data = res.data;
                 if ( typeof res.data.data == 'object' || (res.data.data && res.data.data.errors) ) {
@@ -35,6 +36,8 @@ angular.module('poki')
                     $scope.showError = false;
                     $scope.sourceCode = res.data.source_code;
                     $scope.possibleList = res.data.destination_scenarios[0].choice_lists[0];
+                    $scope.searchQuery = $scope.sourceCode.description.slice(0, $scope.sourceCode.description.indexOf(","));
+                    console.log($scope.searchQuery);
                 }
           });
       };

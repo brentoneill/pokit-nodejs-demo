@@ -1,8 +1,8 @@
 angular.module('poki')
   .factory('PokiService', function ($location, $http){
 
-    var apiUrl = 'https://pd-nodeclient-demo.herokuapp.com/api/'
-    // var apiUrl = 'http://localhost:5000/api/';
+    // var apiUrl = 'https://pd-nodeclient-demo.herokuapp.com/api/'
+    var apiUrl = 'http://localhost:5000/api/';
 
     var getProviders = function(options) {
 
