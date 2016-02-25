@@ -6,7 +6,7 @@ angular.module('poki')
     $scope.tradingPartnersData = tradingPartners.data;
     $scope.showError = false;
     $scope.stats = PokiService.calcTradingPartnerStats(tradingPartners.data);
-    $rootScope.pathToLoaderImg = 'js/pd-loader/pd-loader.gif';
+    $scope.loaderMessage = 'Hold your squirrels! Fetching some acorns...'
 
 
     mainCtrl.goToPage = function(page) {
