@@ -38,10 +38,6 @@ if ( process.env.NODE_ENV != 'production' ) {
     clientSecret = process.env.POKITDOK_CLIENT_SECRET;
 }
 
-console.log(process.env.NODE_ENV);
-console.log(clientId);
-console.log(clientSecret);
-
 // set up pokitDok client
 var pokitdok = new PokitDok(clientId, clientSecret);
 
@@ -167,8 +163,11 @@ app.post('/api/icdConvert', function(req, res){
     pokitdok.icdConvert(code, function(err, response) {
         if (err) {
             res.send(err);
+            return console.log(err);
         }
+        console.log(response.data);
         res.send(response.data);
+
     })
 
 }); // end '/plans' route
