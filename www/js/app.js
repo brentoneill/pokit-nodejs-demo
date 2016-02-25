@@ -1,6 +1,7 @@
 angular.module('poki', [
   'ngRoute',
-  'ngAnimate'
+  'ngAnimate',
+  'pdLoader'
 ])
 .config(function($routeProvider){
   $routeProvider

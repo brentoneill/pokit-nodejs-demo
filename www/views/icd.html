@@ -16,23 +16,22 @@
             </div>
         </div>
         <div class="six columns">
+            <div pd-loader="{ promise: myPromise, backdrop: true, message: loaderMessage, templateUrl: 'js/pd-loader/pd-loader.html', minDuration: 100 }"></div>
+
             <h3 class="text-purple">ICD9 code</h3>
-            <div class="panel">
+
+            <div ng-show="sourceCode.system" class="panel">
                 <h5 class="text-uppercase">{{ sourceCode.system }} - {{ sourceCode.value }}</h5>
                 <p> {{ sourceCode.description }}</p>
             </div>
 
             <hr />
             <h3 class="text-teal"> Possible ICD10 scenarios </h3>
-
-            <div class="panel" ng-repeat="scenario in possibleList">
+            <div ng-show="possibleList" class="panel" ng-repeat="scenario in possibleList">
                 <h5 class="text-uppercase">{{ scenario.system }} - {{ scenario.value }}</h5>
                 <p> {{ scenario.description }}</pp>
             </div>
 
         </div>
     </div>
-
-
-
 </div>
