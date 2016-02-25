@@ -1,6 +1,5 @@
 // get a connection to the PokitDok Platform for the most recent version
 var PokitDok = require('pokitdok-nodejs');
-var config = require('./config');
 
 // express-y stuff
 var express = require('express');
@@ -30,7 +29,10 @@ app.listen(app.get('port'), function () {
     console.log('Express server listening on port ' + app.get('port'));
 });
 
-if (config) {
+console.log(process.env.NODE_ENV);
+
+if ( process.env.NODE_ENV != 'production' ) {
+    var config = require('./config');
     clientId = config.pokitDok.clientId,
     clientSecret = config.pokitDok.clientSecret
 } else {
