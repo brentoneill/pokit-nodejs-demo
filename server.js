@@ -159,9 +159,10 @@ app.post('/api/insurancePrices', function(req, res){
 }); // end '/plans' route
 app.post('/api/icdConvert', function(req, res){
     var code = req.body.icd_code;
-    console.log(code);
+    var options = {};
+    options.code = code;
 
-    pokitdok.icdConvert(code, function(err, response) {
+    pokitdok.icdConvert(options, function(err, response) {
         if (err) {
             res.send(err);
             return console.log(err);
