@@ -29,8 +29,6 @@ app.listen(app.get('port'), function () {
     console.log('Express server listening on port ' + app.get('port'));
 });
 
-console.log(process.env.NODE_ENV);
-
 if ( process.env.NODE_ENV != 'production' ) {
     var config = require('./config');
     clientId = config.pokitDok.clientId,
@@ -39,6 +37,10 @@ if ( process.env.NODE_ENV != 'production' ) {
     clientId = process.env.POKITDOK_CLIENT_ID;
     clientId = process.env.POKITDOK_CLIENT_SECRET;
 }
+
+console.log(process.env.NODE_ENV);
+console.log(clientId);
+console.log(clientSecret);
 
 // set up pokitDok client
 var pokitdok = new PokitDok(clientId, clientSecret);
