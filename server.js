@@ -153,9 +153,8 @@ app.post('/api/icdConvert', function(req, res){
 
     pokitdok.icdConvert(code, function(err, response) {
         if (err) {
-            return console.log(err);
+            res.send(err);
         }
-        console.log(response.data);
         res.send(response.data);
     })
 

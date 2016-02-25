@@ -11,6 +11,9 @@
             <h5>Enter an ICD-9 code below:</h5>
             <input type="text" name="icd" ng-model="icd9Code">
             <button name="button-primary" ng-click="icdCtrl.convertIcd(icd9Code)">Convert</button>
+            <div class="row">
+                <p class="text-yellow" ng-show="showError">You have entered a bad icd9 code, try again!</p>
+            </div>
         </div>
         <div class="six columns">
             <h3 class="text-purple">ICD9 code</h3>
