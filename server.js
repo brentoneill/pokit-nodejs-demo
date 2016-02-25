@@ -156,7 +156,7 @@ app.post('/api/insurancePrices', function(req, res){
     res.send(priceList);
   });
 
-}); // end '/plans' route
+}); // end '/icdConvert' route
 app.post('/api/icdConvert', function(req, res){
     var code = req.body.icd_code;
     var options = {};
@@ -167,9 +167,7 @@ app.post('/api/icdConvert', function(req, res){
             res.send(err);
             return console.log(err);
         }
-        console.log(response.data);
         res.send(response.data);
+    });
 
-    })
-
-}); // end '/plans' route
+}); // end '/icdConvert' route

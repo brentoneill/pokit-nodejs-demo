@@ -11,11 +11,21 @@
             <h5>Enter an ICD-9 code below:</h5>
             <input type="text" name="icd" ng-model="icd9Code">
             <button name="button-primary" ng-click="icdCtrl.convertIcd(icd9Code)">Convert</button>
+            <p>
+                Take it for a spin with one these ICD9 codes:
+                <ul>
+                    <li>Z63.1</li>
+                    <li>T71.231D</li>
+                    <li>V97.33XD</li>
+                    <li>V91.07XA</li>
+                    <li>R46.1</li>
+                </ul>
+            </p>
             <div class="row">
                 <p class="text-yellow" ng-show="showError">You have entered a bad icd9 code, try again!</p>
             </div>
         </div>
-        <div class="six columns">
+        <div class="six columns" ng-if="!showError">
             <div pd-loader="{ promise: myPromise, backdrop: true, message: loaderMessage, templateUrl: 'js/pd-loader/pd-loader.html', minDuration: 100 }"></div>
 
             <h3 class="text-purple">ICD9 code</h3>
@@ -24,6 +34,11 @@
                 <h5 class="text-uppercase">{{ sourceCode.system }} - {{ sourceCode.value }}</h5>
                 <p> {{ sourceCode.description }}</p>
             </div>
+
+            <p ng-show="sourceCode.system">
+                What is {{ sourceCode.description }} ?
+                <a ng-href="http://google.com/search?q={{sourceCode.description}}" target="_blank">Let me Google that for you...</a>
+            </p>
 
             <hr />
             <h3 class="text-teal">ICD10 scenarios </h3>
